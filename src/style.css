@@ -1,5 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .logo {
   height: 40px;
   width: auto;
   transform: rotate(180deg);
+}
+
+/* Hero */
+.hero {
+  height: 500px;
+  width: 100%;
+  background-image: url(/images/storefront.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  height: 20%;
 }
