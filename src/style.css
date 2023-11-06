@@ -24,3 +24,12 @@
 .home-hero {
   background-image: url(/images/storefront.webp);
 }
+
+/* Company History */
+.appearance-image {
+  border-bottom: 15px solid orange;
+}
+
+.history {
+  background-image: url(/images/appearances/streetcorner.webp);
+}
