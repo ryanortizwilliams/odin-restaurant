@@ -16,11 +16,21 @@ module.exports = {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(ico|png|svg)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "images/logo.png",
+          },
+        },
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+      favicon: "images/logo.png",
     }),
   ],
 };
