@@ -25,6 +25,12 @@
   background-image: url(/images/storefront.webp);
 }
 
+.appearance .card-img-top {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+}
+
 /* Company History */
 .appearance-image {
   border-bottom: 15px solid orange;
