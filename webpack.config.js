@@ -1,6 +1,7 @@
 //path
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -31,6 +32,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "index.html",
       favicon: "images/logo.png",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/tab1.html", to: "tab1.html" },
+        { from: "src/tab2.html", to: "tab2.html" },
+        { from: "src/tab3.html", to: "tab3.html" },
+      ],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "images",
+          to: "images",
+        },
+      ],
     }),
   ],
 };
