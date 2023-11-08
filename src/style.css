@@ -43,3 +43,9 @@
 .menu {
   background-image: url(/images/appearances/longriders.webp);
 }
+
+@media only screen and (min-width: 992px) {
+  .active-border {
+    border-bottom: 2px solid red;
+  }
+}
