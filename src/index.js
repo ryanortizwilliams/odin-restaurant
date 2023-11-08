@@ -22,7 +22,6 @@ fetch("tab1.html")
     console.error("Error fetching tab1.html:", error);
   });
 
-//TODO: Create tabbing behaviour
 function changeTab(tabNumber) {
   content.innerHTML = "";
   fetch(`tab${tabNumber}.html`)
@@ -34,8 +33,12 @@ function changeTab(tabNumber) {
       console.error(`Error fetching tab${tabNumber}.html:`, error);
     });
 }
+
 //get elements for each nav-link
 const tabs = document.querySelectorAll(".nav-link");
+
+//TODO: Toggle links to be active
+function toggleActive() {}
 //put event listener on each one to tab
 tabs.forEach((link, index) => {
   link.addEventListener("click", changeTab.bind(null, index + 1));
